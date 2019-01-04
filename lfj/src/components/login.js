@@ -12,3 +12,8 @@ import { admin } from "firebase-admin";
     messagingSenderId: "827808830087"
   };
   admin.initializeApp(config);
+const login{
+    
+};
+
+export default login;  
