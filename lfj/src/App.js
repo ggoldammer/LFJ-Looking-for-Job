@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import  Navbar from './components/layout/Navbar.js';
-import './App.css';
 
 class App extends Component {
   render() {
@@ -9,6 +8,9 @@ class App extends Component {
       <BrowserRouter>
         <div className="to-be-added">
           <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
         </div>
       </BrowserRouter>
     );
