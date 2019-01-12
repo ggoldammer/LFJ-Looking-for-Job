@@ -5,11 +5,11 @@ import SignedOutLinks from './SignedOutLinks'
 
 const Navbar = () => {
 return (
-        <nav className="navBar-to-be-added">
-            <div className="container-to-be-added">
-                <Link to='/' className="brand-logo">Job Finder NavBar</Link>
+        <nav className="">
+            <div className="ccontainer">
+                <Link to='/' className="brand-logo"><h2>LFJ Logo</h2></Link>
                 <SignedInLinks/>
-                <SignedOutLinks/>
+                {/* <SignedOutLinks/> */}
             </div>
         </nav>
         )

@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 const SignedInLinks = () => {
 return (
-    <ul>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/'>About</NavLink></li>
-        <li><NavLink to='/'>Contact</NavLink></li>
-        <li><NavLink to='/'>Log Out</NavLink></li>
+    <ul className="nav">
+        <li className="nav-item"><NavLink to='/'>Home</NavLink></li>
+        <li className="nav-item"><NavLink to='/'>About</NavLink></li>
+        <li className="nav-item"><NavLink to='/'>Contact</NavLink></li>
+        <li className="nav-item"><NavLink to='/'>Log Out</NavLink></li>
     </ul>
         )
 }
