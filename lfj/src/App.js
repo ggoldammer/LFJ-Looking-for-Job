@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Scraper from "./components/scraper/Scraper.js";
 import NavbarPage from './components/layout/NavbarPage.js';
 import SearchBar from './components/content/SearchBar.js';
+import HomeContainer from './components/content/HomeContainer.js';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <div className="to-be-added">
           <NavbarPage />
           <SearchBar />
+          <HomeContainer />
           <Switch>
             {/* <Route exact path="/" component={Home} /> */}
           </Switch>
