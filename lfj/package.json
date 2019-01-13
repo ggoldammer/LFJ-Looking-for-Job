@@ -8,6 +8,7 @@
     "firebase": "^5.7.2",
     "firebase-admin": "^6.4.0",
     "firebase-tools": "^6.2.2",
+    "mdbreact": "^4.8.7",
     "mongoose": "^5.4.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
