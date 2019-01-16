@@ -11,7 +11,6 @@ class App extends Component {
       <BrowserRouter>
         <div className="to-be-added">
           <NavbarPage />
-          <SearchBar />
           <HomeContainer />
           <Switch>
             {/* <Route exact path="/" component={Home} /> */}

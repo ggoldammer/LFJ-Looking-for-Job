@@ -23,23 +23,10 @@ class NavbarPage extends React.Component {
                 <NavLink to="#!">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="#!">Features</NavLink>
+                <NavLink to="#!">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="#!">Pricing</NavLink>
-              </NavItem>
-              <NavItem>
-                <Dropdown>
-                  <DropdownToggle  nav caret>
-                    <div className="d-none d-md-inline">Dropdown</div>
-                  </DropdownToggle>
-                  <DropdownMenu className="dropdown-default"right>
-                    <DropdownItem href="#!">Action</DropdownItem>
-                    <DropdownItem href="#!">Another Action</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
+                <NavLink to="#!">Contact</NavLink>
               </NavItem>
             </NavbarNav>
             <NavbarNav right>

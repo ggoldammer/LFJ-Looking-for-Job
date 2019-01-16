@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
+import SearchBar from "./SearchBar";
 // import "./style.css";
 
 class HomeContainer extends React.Component {
@@ -7,7 +8,7 @@ class HomeContainer extends React.Component {
         return (
             <MDBContainer>
                 <MDBRow>
-                    <MDBCol>Testing this</MDBCol>
+                    <SearchBar/>
                 </MDBRow>
             </MDBContainer>
         );
