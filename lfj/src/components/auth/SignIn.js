@@ -1,22 +1,32 @@
-import React from "react";
+import React, { Component } from "react";
 
 class SignIn extends Component {
   state = {
-
+    email: "",
+    password: ""
   }
+  handleChange = (e) =>{
+    this.setState({
+      [e.target.id]: e.target.value
+    })
+  };
+  handleSubmit = (e) =>{
+    e.preventdefault();
+    console.log(this.state)
+  };
   render() {
     return (
       <div className="container">
-        <form onSubmit={} className="to-be-added">
+        <form onSubmit={this.handleSubmit} className="to-be-added">
           <h5 className="to-be-added">Sign In</h5>
           <div className="to-be-added">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={}/>
+            <input type="email" id="email" onChange={this.handleChange}/>
           </div>
 
           <div className="to-be-added">
               <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={}/>
+            <input type="password" id="password" onChange={this.handleChange}/>
           </div>
 
           <div className="to-be-added">
@@ -27,3 +37,4 @@ class SignIn extends Component {
     )
   }
 }
+export default SignIn
