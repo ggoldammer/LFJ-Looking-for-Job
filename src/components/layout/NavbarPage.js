@@ -39,7 +39,7 @@ class NavbarPage extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <Fa icon="user" />
+                    <Fa icon="user"><button>Login</button></Fa>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default" right>
                     <DropdownItem href="#!">Action</DropdownItem>
