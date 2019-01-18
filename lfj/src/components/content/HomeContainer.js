@@ -42,9 +42,10 @@ request({
 }, function(error, response, body) {      
     var data = JSON.parse(body);
     console.log(data); 
-     
+
     if(error){
         console.log(error);
+        console.log(test);
     }
 });
 
