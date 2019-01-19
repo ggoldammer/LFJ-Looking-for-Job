@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, FormInline, Dropdown, DropdownToggle, DropdownMenu,  DropdownItem, Fa } from "mdbreact";
 
-class NavbarPage extends React.Component {
+class NavbarSection extends React.Component {
   state = {
     isOpen: false
   };
@@ -39,7 +39,7 @@ class NavbarPage extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <Fa icon="user" />
+                    <Fa icon="user"><button>Login</button></Fa>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default" right>
                     <DropdownItem href="#!">Action</DropdownItem>
@@ -56,4 +56,4 @@ class NavbarPage extends React.Component {
   }
 }
 
-export default NavbarPage;
+export default NavbarSection;
