@@ -16,8 +16,8 @@ if (process.env.NODE_ENV !== 'production') {
 
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
-        storageBucket: 'project-runner-f1bdc.appspot.com'
-    });
+        databaseURL: "https://lfj-looking-for-job.firebaseio.com"
+      });
 
 }
 else {
