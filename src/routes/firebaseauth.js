@@ -3,7 +3,7 @@ const router = express.Router();
 import firebase from "../components/config/config"
 const auth = firebase.auth();
 const db = firebase.firestore().settings({timestampsInSnapshots:true});
-const verify = require('../resources/admin').auth();
+const verify = require('../components/config/firebaseAdminConfig').auth();
 
 router.post('/create', (req, res) => {
     const userInfo = req.body.employee;
