@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const firebase = require('../resources/firebase');
+import firebase from "../components/config/config"
 const auth = firebase.auth();
-const db = require('../resources/db');
+const db = firebase.firestore().settings({timestampsInSnapshots:true});
 const verify = require('../resources/admin').auth();
 
 router.post('/create', (req, res) => {
