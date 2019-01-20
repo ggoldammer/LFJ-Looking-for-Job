@@ -25,6 +25,7 @@ class SearchBar extends React.Component {
                         size="sm"
                         type="submit"
                         className="mx-auto"
+                        id="search-button"
                     >
                         Search
           </Button>
@@ -33,5 +34,24 @@ class SearchBar extends React.Component {
         );
     }
 }
+
+// request({      
+//     url: 'https://data.usajobs.gov/api/search?keyword=forest',      
+//     method: 'GET',      
+//     headers: {          
+//         "Host": process.env.REACT_APP_HOST,
+//         "User-Agent": process.env.REACT_USER_AGENT,
+//         "Authorization-Key": process.env.REACT_APP_USA_KEY     
+//     }  
+// }, function(error, response, body) {      
+//     var data = JSON.parse(body);
+//     console.log(data); 
+
+//     if(error){
+//         console.log(error);
+//         console.log(test);
+//     }
+// });
+
 
 export default SearchBar;

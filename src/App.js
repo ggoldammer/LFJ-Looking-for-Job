@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Scraper from "./components/scraper/Scraper.js";
-import NavbarPage from './components/layout/NavbarPage.js';
-import SearchBar from './components/content/SearchBar.js';
-import HomeContainer from './components/content/HomeContainer.js';
+import NavbarSection from './components/content/Navbar/NavbarSection';
+import MainContainer from './components/content/MainContent/MainContainer';
+import FooterSection from './components/content/Footer/FooterSection'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div className="to-be-added">
-          <NavbarPage />
-          <HomeContainer />
+          <NavbarSection />
+          <MainContainer />
+          <FooterSection />
           <Switch>
             {/* <Route exact path="/" component={Home} /> */}
           </Switch>
