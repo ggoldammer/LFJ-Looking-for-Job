@@ -8,7 +8,7 @@ return (
         <li className="nav-item"><NavLink to='/'>Home</NavLink></li>
         <li className="nav-item"><NavLink to='/'>About</NavLink></li>
         <li className="nav-item"><NavLink to='/'>Contact</NavLink></li>
-        <li className="nav-item"><NavLink to='/'>Log Out</NavLink></li>
+        <li className="nav-item"><NavLink to='/logout'>Log Out</NavLink></li>
     </ul>
         )
 }
