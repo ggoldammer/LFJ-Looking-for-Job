@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
+import HomePage from "./HomePage/HomePage"
 import SearchBar from "./SearchBar";
 import ApiResults from "./ApiResultItem";
 import axios from "axios";
@@ -10,7 +11,7 @@ class MainContainer extends React.Component {
         return (
             <MDBContainer>
                 <MDBRow>
-
+                    <HomePage />
                 </MDBRow>
             </MDBContainer>
         );

@@ -61,5 +61,4 @@ router.post('/verify', (req, res) => {
     }
 })
 
-// module.exports = router;
-export default router
+module.exports = router;

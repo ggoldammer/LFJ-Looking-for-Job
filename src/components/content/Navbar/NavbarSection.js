@@ -39,7 +39,7 @@ class NavbarSection extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <Fa icon="user"><button>Login</button></Fa>
+                    <Fa icon="user"><button href="/login">Login</button></Fa>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default" right>
                     <DropdownItem href="#!">Action</DropdownItem>
