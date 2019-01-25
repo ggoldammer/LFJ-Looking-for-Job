@@ -1,6 +1,6 @@
+import firebase from "../components/config/config"
 const express = require('express');
 const router = express.Router();
-import firebase from "../components/config/config"
 const auth = firebase.auth();
 const db = firebase.firestore().settings({timestampsInSnapshots:true});
 const verify = require('../components/config/firebaseAdminConfig').auth();
@@ -16,7 +16,7 @@ router.post('/create', (req, res) => {
                 isAdmin: false,
             })
             .then(doc => res.json({success: true, uid: user.user.uid}))
-            .catch(err => {console.log(err); json.res({err})})
+            .catch(err => {console.log(err); JSON.res({err})})
         })
         .catch(err => {
             console.log(err);
@@ -61,4 +61,5 @@ router.post('/verify', (req, res) => {
     }
 })
 
-module.exports = router;
+// module.exports = router;
+export default router

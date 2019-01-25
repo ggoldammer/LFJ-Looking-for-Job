@@ -4,6 +4,7 @@ import NavbarSection from './components/content/Navbar/NavbarSection';
 import MainContainer from './components/content/MainContent/MainContainer';
 import FooterSection from './components/content/Footer/FooterSection'
 
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +14,6 @@ class App extends Component {
           <MainContainer />
           <FooterSection />
           <Switch>
-            {/* <Route exact path="/" component={Home} /> */}
           </Switch>
         </div>
       </BrowserRouter>

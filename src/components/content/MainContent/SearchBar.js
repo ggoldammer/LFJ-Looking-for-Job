@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, FormInline, Button } from "mdbreact";
+import { array } from "prop-types";
 // import "./style.css";
 
 class SearchBar extends React.Component {
@@ -12,12 +13,14 @@ class SearchBar extends React.Component {
                         type="text"
                         placeholder="Search"
                         aria-label="Search"
+                        id="search-query"
                     />
                     <input
                         className="form-control mx-auto mr-sm-2"
                         type="text"
                         placeholder="City/State"
                         aria-label="City/State"
+                        id="location"
                     />
                     <Button
                         gradient="aqua"
@@ -35,23 +38,32 @@ class SearchBar extends React.Component {
     }
 }
 
-// request({      
-//     url: 'https://data.usajobs.gov/api/search?keyword=forest',      
-//     method: 'GET',      
-//     headers: {          
-//         "Host": process.env.REACT_APP_HOST,
-//         "User-Agent": process.env.REACT_USER_AGENT,
-//         "Authorization-Key": process.env.REACT_APP_USA_KEY     
-//     }  
-// }, function(error, response, body) {      
-//     var data = JSON.parse(body);
-//     console.log(data); 
+// function getJobs(){
+//     const query = document.getElementById('search-query').input
+//     const location = document.getElementById('location').input
 
-//     if(error){
-//         console.log(error);
-//         console.log(test);
-//     }
-// });
+//     request({      
+//         url: `https://data.usajobs.gov/api/search?keyword=${query}&locationname=${location}`,      
+//         method: 'GET',      
+//         headers: {          
+//             "Host": process.env.REACT_APP_HOST,
+//             "User-Agent": process.env.REACT_USER_AGENT,
+//             "Authorization-Key": process.env.REACT_APP_USA_KEY     
+//         }  
+//     }, function(error, response, body) {      
+//         var data = JSON.parse(body);
+//         for(i = 0; i < data.SearchResult.SearchResultItems.length; i++){
+
+//         }
+//         console.log(data); 
+
+//         if(error){
+//             console.log(error);
+//         }
+//     });
+// }
+
+
 
 
 export default SearchBar;
