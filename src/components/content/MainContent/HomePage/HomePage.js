@@ -4,8 +4,10 @@ import MainContainer from "../MainContainer"
 
 function HomePage(){
     return(
+        <div>
         <SearchBar />
         <MainContainer />
+        </div>
     )
 }
 
