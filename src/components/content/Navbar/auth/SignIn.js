@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-const admin = require("../../../../config/firebaseAdminconfig")
+import React, { Component } from "react"
+import firebase from "firebase"
+// const admin = require("../../../../config/firebaseAdminconfig")
 
 
-admin.auth().signInWithEmailAndPassword(
-  credentials.email,
-  credentials.password
-).then(user => {
-  console.log(user)
-}
+// admin.auth().signInWithEmailAndPassword(
+//   credentials.email,
+//   credentials.password
+// ).then(user => {
+//   console.log(user)
+// }
 
-)
+// )
 
 class SignIn extends Component {
   state = {

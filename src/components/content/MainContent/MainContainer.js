@@ -11,8 +11,7 @@ class MainContainer extends React.Component {
         return (
             <MDBContainer>
                 <MDBRow>
-                    {/* <HomePage /> */}
-                    <SearchBar/>
+
                 </MDBRow>
             </MDBContainer>
         );
