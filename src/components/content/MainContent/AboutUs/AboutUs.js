@@ -6,7 +6,7 @@ const AboutUs = () => {
         <MDBContainer>
             <MDBRow>
                 <MDBCol>
-                    <MDBCard style={{ width: "17rem" }}>
+                    <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Andres Gonzalez</MDBCardTitle>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                     </MDBCard>
                 </MDBCol>
                 <MDBCol>
-                    <MDBCard style={{ width: "17rem" }}>
+                    <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Fernando Aguilar</MDBCardTitle>
@@ -32,7 +32,7 @@ const AboutUs = () => {
                     </MDBCard>
                 </MDBCol>
                 <MDBCol>
-                    <MDBCard style={{ width: "17rem" }}>
+                    <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Gabriel Viveros-Goldammer</MDBCardTitle>
@@ -45,7 +45,7 @@ const AboutUs = () => {
                     </MDBCard>
                 </MDBCol>
                 <MDBCol>
-                    <MDBCard style={{ width: "17rem" }}>
+                    <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Sergio Trujillo</MDBCardTitle>
