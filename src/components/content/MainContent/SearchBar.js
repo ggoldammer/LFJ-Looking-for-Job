@@ -98,9 +98,7 @@ class SearchBar extends React.Component {
                     </MDBContainer>
                 </MDBJumbotron>
                 <MDBContainer>
-                    <MDBRow>
                         {jobOutput}
-                    </MDBRow>
                 </MDBContainer>
             </div>
         );
