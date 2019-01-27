@@ -7,13 +7,13 @@ import { get } from "http";
 
 
 class SearchBar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            query: '',
-            location: ''
-        }
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         query: '',
+    //         location: ''
+    //     }
+    // }
 
     handleInput = event => {
         const name = event.target.name;
@@ -34,9 +34,6 @@ class SearchBar extends React.Component {
             }
         }, function (error, response, body) {
             var data = JSON.parse(body);
-            for (let i = 0; i < data.SearchResult.SearchResultItems.length; i++) {
-
-            }
             console.log(data);
 
             if (error) {
