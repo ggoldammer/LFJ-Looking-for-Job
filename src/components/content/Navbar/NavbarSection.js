@@ -57,12 +57,6 @@ class NavbarSection extends React.Component {
           </NavbarNav>
           <NavbarNav right>
             <NavItem>
-              <NavLink className="waves-effect waves-light" to="#!"><Fa icon="twitter" /></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="waves-effect waves-light" to="#!"><Fa icon="google-plus" /></NavLink>
-            </NavItem>
-            <NavItem>
               <MDBBtn to="/signin" color="primary">Login</MDBBtn>
             </NavItem>
           </NavbarNav>
