@@ -1,0 +1,15 @@
+.hero-text {
+    color: #eeeeee;
+}
+
+.btn-default{
+    background-color: #a181d6 !important;
+}
+.hero {
+    background-image: url('../src/img/architecture.jpg');
+    background-size: cover;
+}
+
+.footer {
+    background-color: #622bbb;
+}
