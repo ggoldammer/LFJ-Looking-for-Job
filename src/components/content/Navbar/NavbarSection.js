@@ -6,7 +6,10 @@ class NavbarSection extends React.Component {
     isOpen: false
   };
 
-  toggleCollapse = this.setState({ isOpen: !this.state.isOpen });
+  toggleCollapse = collapseID => () =>
+    this.setState(prevState => ({
+      collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+    }));
 
   render() {
     return (
@@ -15,9 +18,9 @@ class NavbarSection extends React.Component {
           <strong className="white-text">LFJ App</strong>
         </NavbarBrand>
         <NavbarToggler
-          onClick={this.toggleCollapse}
+          onClick={this.toggleCollapse("navbarCollapse")}
         />
-        <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        <Collapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
           <NavbarNav left>
             <NavItem active>
               <NavLink to="/">Home</NavLink>
