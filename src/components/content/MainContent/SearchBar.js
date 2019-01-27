@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
 
                     <Col md="12">
 
-                        <FormInline className="md-form mx-auto mb-4">
+                        <FormInline id="form-search" className="md-form mx-auto mb-4">
                             <input
                                 className="form-control mx-auto mr-sm-2"
                                 name="query"
@@ -81,8 +81,6 @@ class SearchBar extends React.Component {
                                 onChange={this.handleInput}
                             />
                             <Button
-                                gradient="aqua"
-                                rounded
                                 size="sm"
                                 type="submit"
                                 className="mx-auto"
