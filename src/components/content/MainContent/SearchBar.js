@@ -49,7 +49,7 @@ class SearchBar extends React.Component {
 
 
     render() {
-        const jobOutput = this.state.jobIndex.map((job, i) => <MainResult key={i} title={job.MatchedObjectDescriptor.PositionTitle} employer={job.MatchedObjectDescriptor.OrganizationName} link={job.MatchedObjectDescriptor.ApplyURI[0]} />)
+        const jobOutput = this.state.jobIndex.map((job, i) => <Animation type="fadeIn" duration="500ms" delay="0.1s"><MainResult key={i} title={job.MatchedObjectDescriptor.PositionTitle} employer={job.MatchedObjectDescriptor.OrganizationName} link={job.MatchedObjectDescriptor.ApplyURI[0]} /></Animation>)
 
         return (
             <div>
