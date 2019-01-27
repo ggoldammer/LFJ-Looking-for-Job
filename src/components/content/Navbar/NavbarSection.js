@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, FormInline, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Fa, MDBBtn } from "mdbreact";
 import fire from "../../config/Fire";
 import SignedOutLinks from "./SignedOutLinks"
+import SignedInLinks from "./SignedInLinks"
 
 class NavbarSection extends React.Component {
   constructor(props){
@@ -37,7 +37,9 @@ class NavbarSection extends React.Component {
 
   render() {
     return (
-      <SignedOutLinks />
+      <div>
+      {this.state.user ? (<SignedInLinks />) : (<SignedOutLinks />)}
+      </div>
     );
   }
 }
