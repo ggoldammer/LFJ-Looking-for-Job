@@ -1,15 +1,10 @@
 import React from "react";
-import { Col, FormInline, Button, MDBJumbotron, MDBContainer } from "mdbreact";
+import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation } from "mdbreact";
 import request from "request"
 import { array } from "prop-types";
 import $ from "jquery"
 import { get } from "http";
 
-
-
-/////////////////////////////////////////////
-//////////////COMPONENT BELOW //////////////
-///////////////////////////////////////////
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -56,7 +51,14 @@ class SearchBar extends React.Component {
         return (
             <MDBJumbotron className="hero" fluid>
                 <MDBContainer>
-                    <h1 className="hero-text text-center">Look For A Job.</h1>
+                    <Animation type="fadeInDown" duration="1s">
+                        <h1 className="hero-text text-center">Looking For Job</h1>
+
+                    </Animation>
+                    <Animation type="fadeInDown" duration="1s" delay="0.2s">
+                        <h2 className="hero-text text-center">Your Job Search Improved.</h2>
+                    </Animation>
+
                     <Col md="12">
 
                         <FormInline className="md-form mx-auto mb-4">

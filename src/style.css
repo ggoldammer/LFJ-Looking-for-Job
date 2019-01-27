@@ -8,8 +8,14 @@
 .hero {
     background-image: url('../src/img/architecture.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .footer {
     background-color: #622bbb;
+}
+
+.default-color {
+    background-color: #622bbb !important
 }
