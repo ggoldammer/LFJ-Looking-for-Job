@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavbarSection from './components/content/Navbar/NavbarSection';
-import MainContainer from './components/content/MainContent/MainContainer';
-import FooterSection from './components/content/Footer/FooterSection'
+import HomePage from './components/content/MainContent/HomePage/HomePage';
+import AboutUs from './components/content/MainContent/AboutUs/AboutUs';
+import SignIn from './components/content/Navbar/auth/SignIn'
+import FooterSection from './components/content/Footer/FooterSection';
+
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="to-be-added">
+        <div>
           <NavbarSection />
-          <MainContainer />
-          <FooterSection />
           <Switch>
-            {/* <Route exact path="/" component={Home} /> */}
+            <Route path="/" exact component={HomePage} />
+            <Route path="/about" exact component={AboutUs} />
+            <Route path="/signin" exact component={SignIn} />
           </Switch>
+          <FooterSection />
         </div>
       </BrowserRouter>
     );
