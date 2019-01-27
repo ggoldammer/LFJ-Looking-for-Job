@@ -1,10 +1,7 @@
 import React from "react";
 import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation, MDBRow } from "mdbreact";
 import request from "request"
-import MainResult from "MainResult"
-import { array } from "prop-types";
-import $ from "jquery"
-import { get } from "http";
+import MainResult from "./MainResult"
 
 
 class SearchBar extends React.Component {
@@ -44,6 +41,7 @@ class SearchBar extends React.Component {
                 jobIndex: data.SearchResult.SearchResultItems
             })
             console.log(this.state.jobIndex)
+
         }
         )
     }
@@ -51,6 +49,8 @@ class SearchBar extends React.Component {
 
 
     render() {
+        const jobOutput = this.state.jobIndex.map((job, i) => <MainResult key={i} title={job.MatchedObjectDescriptor.PositionTitle} employer={job.MatchedObjectDescriptor.OrganizationName} link={job.MatchedObjectDescriptor.ApplyURI[0]} />)
+
         return (
             <div>
                 <MDBJumbotron className="hero" fluid>
@@ -99,7 +99,7 @@ class SearchBar extends React.Component {
                 </MDBJumbotron>
                 <MDBContainer>
                     <MDBRow>
-
+                        {jobOutput}
                     </MDBRow>
                 </MDBContainer>
             </div>

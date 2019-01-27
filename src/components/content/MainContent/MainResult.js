@@ -5,8 +5,8 @@ function MainResult(props) {
     return (
         <MDBRow>
             <div>
-                <h4>{props.jobTitle}</h4>
-                <p>{props.jobDescription}</p>
+                <h4>{props.title}</h4>
+                <p>{props.description}</p>
                 <button to={props.link}>Apply!</button>
             </div>
         </MDBRow>
