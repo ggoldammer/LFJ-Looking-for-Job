@@ -9,7 +9,7 @@ class FooterSection extends React.Component {
           <Row>
             <Col md="6">
               <p>
-                Made with tremendous amount of time, effort, and sacrifice.
+                Made with a tremendous amount of time, effort, and sacrifice.
               </p>
               <p>
                 <a target="_blank" href="https://github.com/Fernando4627/LFJ-Looking-for-Job">View Github Repo Here</a>
