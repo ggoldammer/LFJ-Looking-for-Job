@@ -6,7 +6,7 @@
     background-color: #a181d6 !important;
 }
 .hero {
-    background-image: url('../src/img/architecture.jpg');
+    background-image: url('/img/architecture.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -23,10 +23,6 @@
 .jumbotron {
     border-radius: 0px !important;
 }
-/* 
-.md-form input[type=text], .md-form input[type=password], .md-form input[type=email], .md-form input[type=url], .md-form input[type=time], .md-form input[type=date], .md-form input[type=datetime-local], .md-form input[type=tel], .md-form input[type=number], .md-form input[type=search-md], .md-form input[type=search], .md-form textarea.md-textarea {
-    color: #eeeeee !important;
-} */
 
 .md-form input[type=text]::placeholder {
     color: #eeeeee;
