@@ -1,14 +1,23 @@
-import React from "react"
+import React, { Component } from "react"
 import SearchBar from "../SearchBar"
-import MainContainer from "../MainContainer"
+import MainContainer from "../MainResult"
+import request from "request"
 
-function HomePage(){
-    return(
-        <div>
-            <SearchBar />
-            <MainContainer />
-        </div>
-    )
+
+
+
+class HomePage extends Component {
+
+
+
+    render() {
+        return (
+            <div>
+                <SearchBar />
+            </div>
+        )
+    }
+
 }
 
 export default HomePage
