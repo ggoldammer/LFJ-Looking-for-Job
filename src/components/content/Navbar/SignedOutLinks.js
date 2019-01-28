@@ -14,6 +14,15 @@ class SignedOutLinks extends React.Component {
             collapseID: prevState.collapseID !== collapseID ? collapseID : ""
         }));
 
+    submitHandler = event => {
+        event.preventDefault();
+        event.target.className += " was-validated";
+    };
+
+    changeHandler = event => {
+        this.setState({ [event.target.name]: event.target.value });
+    };
+
     render() {
         return (
             <Navbar color="default-color" dark expand="md">
@@ -69,7 +78,7 @@ class SignedOutLinks extends React.Component {
                                     <div className="valid-feedback">Looks good!</div>
                                 </MDBCol>
                                 <MDBCol md="4" className="mb-2">
-                                    <MDBBtn color="primary" type="submit">
+                                    <MDBBtn color="primary" type="submit" size="sm">
                                         Login / Register
                                 </MDBBtn>
                                 </MDBCol>
