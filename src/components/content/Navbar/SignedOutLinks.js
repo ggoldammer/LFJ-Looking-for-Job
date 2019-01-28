@@ -1,10 +1,12 @@
 import React from 'react'
-import { NavbarNav, NavItem, NavLink, MDBCollapse, MDBBtn, NavbarToggler, Navbar, NavbarBrand, MDBInput  } from "mdbreact";
+import { NavbarNav, NavItem, NavLink, MDBCollapse, MDBRow, NavbarToggler, Navbar, NavbarBrand, MDBCol, MDBBtn } from "mdbreact";
 
 
 class SignedOutLinks extends React.Component {
     state = {
-        collapseID: ""
+        collapseID: "",
+        email: "",
+        password: ""
     }
 
     toggleCollapse = collapseID => () =>
@@ -23,7 +25,7 @@ class SignedOutLinks extends React.Component {
                 />
                 <MDBCollapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
                     <NavbarNav left>
-                        <NavItem active>
+                        <NavItem>
                             <NavLink to="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
@@ -34,9 +36,45 @@ class SignedOutLinks extends React.Component {
                         </NavItem>
                     </NavbarNav>
                     <NavbarNav right>
-                        <NavItem>
-                            <MDBBtn to="/signin" color="primary">Login</MDBBtn>
-                        </NavItem>
+                        <form
+                            className="needs-validation"
+                            onSubmit={this.submitHandler}
+                            noValidate
+                        >
+                            <MDBRow>
+                                <MDBCol md="4" className="mb-3">
+                                    <input
+                                        value={this.state.email}
+                                        name="email"
+                                        onChange={this.changeHandler}
+                                        type="text"
+                                        id="defaultFormRegisterNameEx"
+                                        className="form-control"
+                                        placeholder="Email"
+                                        required
+                                    />
+                                    <div className="valid-feedback">Looks good!</div>
+                                </MDBCol>
+                                <MDBCol md="4" className="mb-3">
+                                    <input
+                                        value={this.state.password}
+                                        name="password"
+                                        onChange={this.changeHandler}
+                                        type="text"
+                                        id="defaultFormRegisterEmailEx2"
+                                        className="form-control"
+                                        placeholder="Password"
+                                        required
+                                    />
+                                    <div className="valid-feedback">Looks good!</div>
+                                </MDBCol>
+                                <MDBCol md="4" className="mb-2">
+                                    <MDBBtn color="primary" type="submit">
+                                        Login / Register
+                                </MDBBtn>
+                                </MDBCol>
+                            </MDBRow>
+                        </form>
                     </NavbarNav>
                 </MDBCollapse>
             </Navbar>
