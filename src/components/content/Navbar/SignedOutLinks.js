@@ -2,16 +2,6 @@ import React from 'react'
 import { NavbarNav, NavItem, NavLink, MDBCollapse, MDBRow, NavbarToggler, Navbar, NavbarBrand, MDBCol, MDBBtn } from "mdbreact";
 
 
-<<<<<<< HEAD
-const SignedOutLinks = () => {
-return (
-    <ul className="nav">
-        <li className="nav-item"><NavLink to='/'>Home</NavLink></li>
-        <li className="nav-item"><NavLink to='/'>About</NavLink></li>
-        <li className="nav-item"><NavLink to='/create'>Sign Up</NavLink></li>
-        <li className="nav-item"><NavLink to='/login'>Log In</NavLink></li>
-    </ul>
-=======
 class SignedOutLinks extends React.Component {
     state = {
         collapseID: "",
@@ -98,7 +88,6 @@ class SignedOutLinks extends React.Component {
                 </MDBCollapse>
             </Navbar>
 
->>>>>>> 0e26f31379e43c71974855899d72b0780c196b9b
         )
     }
 }
