@@ -1,8 +1,7 @@
 import React from "react";
-import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation, MDBRow } from "mdbreact";
+import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation } from "mdbreact";
 import request from "request"
 import MainResult from "./MainResult"
-import Search from "./models/mongoose"
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -50,13 +49,6 @@ class SearchBar extends React.Component {
 
     render() {
         const jobOutput = this.state.jobIndex.map((job, i) => <Animation type="fadeIn" duration="500ms" delay="0.1s"><MainResult key={i} title={job.MatchedObjectDescriptor.PositionTitle} employer={job.MatchedObjectDescriptor.OrganizationName} link={job.MatchedObjectDescriptor.ApplyURI[0]} /></Animation>)
-
-        Search.create({
-            title: jobOutput.title,
-            employer: jobOutput.employer,
-            link: jobOutput.link
-        })
-        .catch(err => console.log(err.errors));
 
         return (
             <div>

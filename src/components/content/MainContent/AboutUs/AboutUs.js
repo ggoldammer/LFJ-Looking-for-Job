@@ -1,8 +1,6 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-// im going to bed and work on this in morning
-// i will try to get auth setup
-//ok - im watching a react video atm
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+
 const AboutUs = () => {
     return (
         <MDBContainer className="pt-5">

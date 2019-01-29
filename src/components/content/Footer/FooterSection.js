@@ -12,7 +12,7 @@ class FooterSection extends React.Component {
                 Made with a tremendous amount of time, effort, and sacrifice.
               </p>
               <p>
-                <a target="_blank" href="https://github.com/Fernando4627/LFJ-Looking-for-Job">View Github Repo Here</a>
+                <a target="_blank" rel="noopener noreferrer"  href="https://github.com/Fernando4627/LFJ-Looking-for-Job">View Github Repo Here</a>
               </p>
             </Col>
           </Row>

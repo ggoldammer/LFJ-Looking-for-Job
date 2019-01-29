@@ -1,5 +1,5 @@
 import React from "react"
-import { MDBContainer, MDBCol, MDBRow } from "mdbreact"
+import {  MDBRow } from "mdbreact"
 
 function MainResult(props) {
     return (
@@ -7,7 +7,7 @@ function MainResult(props) {
             <div>
                 <h4>{props.title}</h4>
                 <p>{props.employer}</p>
-                <a target="_blank" href={props.link}><button>Apply!</button></a>
+                <a target="_blank" rel="noopener noreferrer" href={props.link}><button>Apply!</button></a>
             </div>
         </MDBRow>
     )
