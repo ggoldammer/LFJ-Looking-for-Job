@@ -1,5 +1,4 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
 import { NavbarNav, NavItem, NavLink, MDBCollapse, MDBRow, NavbarToggler, Navbar, NavbarBrand, MDBCol, MDBBtn } from "mdbreact";
 import fire from '../../config/Fire';
 
@@ -8,7 +7,6 @@ class SignedInLinks extends React.Component {
     constructor(props) {
         super(props)
         this.logout = this.logout.bind(this);
-        // this.changeHandler = this.changeHandler.bind(this);
         this.state = {
             collapseID: "",
         }
@@ -17,11 +15,6 @@ class SignedInLinks extends React.Component {
     logout(){
         fire.auth().signOut();
     }
-    // state = {
-    //     collapseID: "",
-    //     email: "",
-    //     password: ""
-    // }
 
     toggleCollapse = collapseID => () =>
         this.setState(prevState => ({
@@ -32,10 +25,6 @@ class SignedInLinks extends React.Component {
         event.preventDefault();
         event.target.className += " was-validated";
     };
-
-    // changeHandler = event => {
-    //     this.setState({ [event.target.name]: event.target.value });
-    // };
 
     login(e){
         e.preventDefault();
@@ -69,8 +58,8 @@ class SignedInLinks extends React.Component {
                             noValidate
                         >
                             <MDBRow>
-                                <MDBCol md="4" className="mb-3">
-                                    <h3>Signed In!</h3>
+                                <MDBCol md="5" className="mb-3 align-middle">
+                                    <h4 className="white-text">Welcome!</h4>
                                 </MDBCol>
                                 <MDBCol md="4" className="mb-2">
                                     <MDBBtn color="primary" type="submit" size="sm" onClick={this.logout}>

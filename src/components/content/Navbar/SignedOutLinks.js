@@ -16,13 +16,6 @@ class SignedOutLinks extends React.Component {
         }
     }
 
-
-    // state = {
-    //     collapseID: "",
-    //     email: "",
-    //     password: ""
-    // }
-
     toggleCollapse = collapseID => () =>
         this.setState(prevState => ({
             collapseID: prevState.collapseID !== collapseID ? collapseID : ""
@@ -65,9 +58,9 @@ class SignedOutLinks extends React.Component {
                         <NavItem>
                             <NavLink to="/">Home</NavLink>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLink to="/about">About</NavLink>
-                        </NavItem>
+                        </NavItem> */}
                     </NavbarNav>
                     <NavbarNav right>
                         <form

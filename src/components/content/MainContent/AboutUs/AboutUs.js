@@ -1,11 +1,15 @@
 import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-// im going to bed and work on this in morning
-// i will try to get auth setup
-//ok - im watching a react video atm
+
 const AboutUs = () => {
     return (
-        <MDBContainer className="pt-5">
+        <MDBContainer className="pt-5 text-center">
+            <MDBRow className="my-3">
+                <MDBCol size="12">
+                    <h1 className="h1 text-center">We are team Targaryen.</h1>
+                    <p>As team names were based on the show Game of Thrones, we of course picked the fiercest. We are young group of aspiring developers that set out to accomplish whatever is thrown our way. Each of us has a Github repo, so feel free to check us out!</p>
+                </MDBCol>
+            </MDBRow>
             <MDBRow>
                 <MDBCol>
                     <MDBCard style={{ width: "15rem" }}>
