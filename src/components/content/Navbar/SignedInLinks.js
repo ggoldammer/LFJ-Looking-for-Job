@@ -12,7 +12,7 @@ class SignedInLinks extends React.Component {
         }
     }
 
-    logout(){
+    logout() {
         fire.auth().signOut();
     }
 
@@ -26,9 +26,9 @@ class SignedInLinks extends React.Component {
         event.target.className += " was-validated";
     };
 
-    login(e){
+    login(e) {
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{}).catch((error) => {
+        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch((error) => {
             console.log(error);
         });
     }
@@ -63,7 +63,7 @@ class SignedInLinks extends React.Component {
                                 </MDBCol>
                                 <MDBCol md="4" className="mb-2">
                                     <MDBBtn color="primary" type="submit" size="sm" onClick={this.logout}>
-                                      Logout
+                                        Logout
                                 </MDBBtn>
                                 </MDBCol>
                             </MDBRow>
