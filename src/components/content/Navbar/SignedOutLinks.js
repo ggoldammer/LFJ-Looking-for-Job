@@ -30,16 +30,16 @@ class SignedOutLinks extends React.Component {
         this.setState({ [event.target.name]: event.target.value });
     };
 
-    login(e){
+    login(e) {
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{}).catch((error) => {
+        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch((error) => {
             console.log(error);
         });
     }
 
-    signup(e){
+    signup(e) {
         e.preventDefault();
-        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {}).then((u)=>{console.log(u)}).catch((error) => {
+        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).then((u) => { console.log(u) }).catch((error) => {
             console.log(error)
         })
     }
@@ -48,7 +48,7 @@ class SignedOutLinks extends React.Component {
         return (
             <Navbar color="default-color" dark expand="md">
                 <NavbarBrand>
-                    <strong className="white-text">LFJ App</strong>
+                    <img src="/img/lfg.png" className="lfj" />
                 </NavbarBrand>
                 <NavbarToggler
                     onClick={this.toggleCollapse("navbarCollapse")}
@@ -100,7 +100,7 @@ class SignedOutLinks extends React.Component {
                                         Login
                                 </MDBBtn>
                                     <MDBBtn color="primary" type="submit" size="sm" onClick={this.signup}>
-                                      Register
+                                        Register
                                 </MDBBtn>
                                 </MDBCol>
                             </MDBRow>

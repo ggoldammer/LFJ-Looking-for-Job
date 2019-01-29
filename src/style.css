@@ -14,14 +14,14 @@
 
 .footer {
     background-color: #622bbb;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .default-color {
     background-color: #622bbb !important
+}
+
+.btn-primary {
+    background-color: #a181d6 !important
 }
 
 .jumbotron {
@@ -39,4 +39,8 @@
 .md-form input[type=text]:focus:not([readonly]) {
     box-shadow: 0 1px 0 0 #622bbb;
     border-bottom: 1px solid #622bbb;
+}
+
+.lfj {
+    width: 68%;
 }

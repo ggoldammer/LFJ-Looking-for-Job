@@ -2,6 +2,7 @@ import React from "react";
 import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation, MDBRow } from "mdbreact";
 import request from "request"
 import MainResult from "./MainResult"
+import NotLoaded from "./NotLoaded"
 
 
 class SearchBar extends React.Component {
@@ -56,7 +57,7 @@ class SearchBar extends React.Component {
                 <MDBJumbotron className="hero" fluid>
                     <MDBContainer>
                         <Animation type="fadeInDown" duration="1s">
-                            <h1 className="hero-text text-center">Looking For Job</h1>
+                            <h1 className="hero-text text-center h1">LFJ | Looking For Jobs</h1>
 
                         </Animation>
                         <Animation type="fadeInDown" duration="1s" delay="0.2s">
@@ -64,7 +65,6 @@ class SearchBar extends React.Component {
                         </Animation>
 
                         <Col md="12">
-
                             <FormInline id="form-search" className="md-form mx-auto mb-4">
                                 <input
                                     className="form-control mx-auto mr-sm-2"
@@ -98,7 +98,9 @@ class SearchBar extends React.Component {
                     </MDBContainer>
                 </MDBJumbotron>
                 <MDBContainer>
-                        {jobOutput}
+                    <Animation type="fadeIn" delay="0.3s">
+                        {this.state.isLoaded ? jobOutput : (<NotLoaded />)}
+                    </Animation>
                 </MDBContainer>
             </div>
         );

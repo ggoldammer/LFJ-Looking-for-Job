@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBContainer, MDBRow, MDBCol, Animation } from 'mdbreact';
 
 const AboutUs = () => {
     return (
@@ -11,42 +11,54 @@ const AboutUs = () => {
                 </MDBCol>
             </MDBRow>
             <MDBRow>
-                <MDBCol>
+            <Animation type="fadeIn">
+            <MDBCol>
                     <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="/img/andres.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Andres Gonzalez</MDBCardTitle>
-                            <MDBBtn href="#">MDBBtn</MDBBtn>
+                            <MDBBtn href="https://github.com/andresjgonzalez6">Github</MDBBtn>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
-                <MDBCol>
+            </Animation>
+            <Animation type="fadeIn" delay="0.1s">
+            <MDBCol>
                     <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="/img/fernando.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Fernando Aguilar</MDBCardTitle>
-                            <MDBBtn href="#">MDBBtn</MDBBtn>
+                            <MDBBtn href="https://github.com/Fernando4627">Github</MDBBtn>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
-                <MDBCol>
+            </Animation>
+            <Animation type="fadeIn" delay="0.2s">
+            <MDBCol>
                     <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="/img/gabriel.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Gabriel Viveros-Goldammer</MDBCardTitle>
-                            <MDBBtn href="#">MDBBtn</MDBBtn>
+                            <MDBBtn target="_blank" href="https://github.com/ggoldammer">Github</MDBBtn>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
-                <MDBCol>
+            </Animation>
+            <Animation type="fadeIn" delay="0.3s">
+            <MDBCol>
                     <MDBCard style={{ width: "15rem" }}>
                         <MDBCardImage className="img-fluid" src="/img/sergio.png" waves />
                         <MDBCardBody>
                             <MDBCardTitle>Sergio Trujillo</MDBCardTitle>
-                            <MDBBtn href="#">MDBBtn</MDBBtn>
+                            <MDBBtn target="_blank" href="https://github.com/SergioT94">Github</MDBBtn>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
+            </Animation>
+
+
+
+
             </MDBRow>
         </MDBContainer>
 

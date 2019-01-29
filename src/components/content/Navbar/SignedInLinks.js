@@ -37,7 +37,7 @@ class SignedInLinks extends React.Component {
         return (
             <Navbar color="default-color" dark expand="md">
                 <NavbarBrand>
-                    <strong className="white-text">LFJ App</strong>
+                    <img src="/img/lfg.png" className="lfj" />
                 </NavbarBrand>
                 <NavbarToggler
                     onClick={this.toggleCollapse("navbarCollapse")}
