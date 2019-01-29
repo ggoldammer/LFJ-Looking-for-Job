@@ -7,7 +7,7 @@ const AboutUs = () => {
             <MDBRow className="my-3">
                 <MDBCol size="12">
                     <h1 className="h1 text-center">We are team Targaryen.</h1>
-                    <p>As team names were based on the show Game of Thrones, we of course picked the fiercest. We are young group of aspiring developers that set out to accomplish whatever is thrown our way. Each of us has a Github repo, so feel free to check us out!</p>
+                    <p>As team names were based on the show Game of Thrones, we of course picked the fiercest. We are young group of aspiring developers that set out to accomplish whatever is thrown our way. Each of us has a Github, so feel free to check us out!</p>
                 </MDBCol>
             </MDBRow>
             <MDBRow>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation, MDBRow } from "mdbreact";
+import { Col, FormInline, Button, MDBJumbotron, MDBContainer, Animation } from "mdbreact";
 import request from "request"
 import MainResult from "./MainResult"
 import NotLoaded from "./NotLoaded"
