@@ -1,4 +1,4 @@
-# LFJ | Looking for Jobs (Project 3)
+# LFJ | Looking for Jobs App(Project 3)
 
 ## Summary & Goal
 
